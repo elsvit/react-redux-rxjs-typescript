@@ -1,0 +1,40 @@
+@import 'variables';
+
+.users-page {
+  display: flex;
+
+  .users-list {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 900px;
+    .is-widescreen & { max-width: 1200px }
+  }
+}
+
+.entity-row {
+
+  .user-row {
+    margin: 0 0 1rem 0;
+    padding: 0.75rem 1rem 0.75rem 1.5rem;
+
+    > div {
+      display: flex;
+      flex: 1 1;
+    }
+  }
+}
+
+.usersQRCodeImg {
+  width: $qrCodeImgSize;
+  height: $qrCodeImgSize;
+  margin: 0 0 1.5rem 0;
+}
+
+.user-form {
+  padding: 0 0 1.5rem 0;
+}
+
+.user-change > div:first-child {
+  flex: 1;
+}

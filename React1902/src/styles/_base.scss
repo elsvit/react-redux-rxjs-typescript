@@ -1,0 +1,80 @@
+@import 'variables';
+@import 'mixins';
+
+html {
+  height: 100%;
+  font-size: $sz-16;
+  -webkit-text-size-adjust: none;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  @include short-windows {
+    font-size: $sz-14;
+  }
+
+  @include small-phone {
+    font-size: $sz-14;
+  }
+
+  @include mobile {
+    font-size: $sz-15;
+  }
+
+  @include from($desktop) {
+    font-size: $sz-16;
+  }
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  color: $black87;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding-right: 0 !important;
+}
+
+main {
+  font-family: $fontFamilyHelvetica;
+  letter-spacing: normal;
+  color: $text;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+.app {
+  background: $app-background;
+}
+
+.app-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: $zBase;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}

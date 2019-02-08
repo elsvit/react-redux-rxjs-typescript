@@ -1,0 +1,45 @@
+@import 'variables';
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: local('Helvetica Neue'), local('Helvetica'),
+    url('../resources/fonts/HelveticaNeue/HelveticaNeue.woff') format('woff'),
+    url('../resources/fonts/HelveticaNeue/HelveticaNeue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Medium';
+  src: local('Helvetica Neue Medium'), local('Helvetica Medium'), local('Helvetica'),
+    url('../resources/fonts/HelveticaNeue/HelveticaNeue-Medium.woff') format('woff'),
+    url('../resources/fonts/HelveticaNeue/HelveticaNeue.ttf') format('truetype');
+  font-weight: $weight-bold;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Bold';
+  src: local('Helvetica Neue Bold'), local('Helvetica Bold'), local('Helvetica'),
+    url('../resources/fonts/HelveticaNeue/HelveticaNeue-Bold.woff') format('woff'),
+    url('../resources/fonts/HelveticaNeue/HelveticaNeue-Bold.ttf') format('truetype');;
+  font-weight: $weight-bold;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Light';
+  src: local('Helvetica Neue Light'), local('Helvetica Light'), local('Helvetica'),
+    url('../resources/fonts/HelveticaNeue/HelveticaNeue-Light.woff') format('woff'),
+    url('../resources/fonts/HelveticaNeue/HelveticaNeue-Light.ttf') format('truetype');;
+  font-weight: $weight-light;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}

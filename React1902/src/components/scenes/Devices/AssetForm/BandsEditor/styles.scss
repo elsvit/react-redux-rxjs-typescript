@@ -1,0 +1,46 @@
+@import '../../../../../styles/variables';
+
+.bands-editor {
+  display: flex;
+  flex-direction: column;
+  padding-left: .4rem;
+  min-height: 6rem;
+  th { padding: 0 0 0 .4rem }
+  td { padding: 0 }
+  .io-icon.delete {
+    margin-top: 4px;
+  }
+  &:last-child { margin-bottom: 2rem }
+  &__add-container {
+    width: 100%;
+    display: flex;
+  }
+  &__section-header {
+    display: flex;
+    align-items: center;
+    padding-right: .55rem;
+  }
+  &__section-title {
+    flex-grow: 1;
+    padding-right: 2rem;
+    word-wrap: break-word;
+  }
+  &__field-input { padding-right: 2rem !important }
+  &__field-adornment {
+    position: absolute;
+    right: 0;
+  }
+  &__inline-input {
+    width: calc(100% - 6rem) !important;
+  }
+  &__inline-input-btn {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0 0 .5rem;
+    box-shadow: none !important;
+  }
+  &__error-row {
+    color: $paleRed;
+    &:first-of-type { margin-top: 1rem }
+  }
+}

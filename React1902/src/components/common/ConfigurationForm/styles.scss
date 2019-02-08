@@ -1,0 +1,13 @@
+@import '../../../styles/variables';
+
+.configuration-form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+  background-color: $lightGrey54;
+
+  .vertical-center {
+    align-self: center;
+  }
+}

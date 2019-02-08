@@ -1,0 +1,121 @@
+@import '../../../styles/variables';
+@import 'react-select';
+
+.cron-builder {
+  display: block;
+  min-height: 200px;
+  background: none;
+  padding: 1rem;
+  color: $black76;
+  font-size: .8rem;
+
+  &__fieldset {
+    border: 1px solid #ddd;
+    border-radius: .35rem;
+  }
+
+  &__legend {
+    margin: 0 1rem;
+    padding: 0;
+  }
+
+  &__tab {
+    padding: .5rem 1rem;
+    font-weight: normal;
+    background: $white;
+    border: 1px solid rgba($steel76, .2);
+    transition: all .2s;
+    margin: 0;
+    cursor: pointer;
+
+    &:first-child {
+      border-top-left-radius: .5rem;
+      border-bottom-left-radius: .5rem;
+      border-right: none;
+    }
+
+    &:last-child {
+      border-top-right-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+      border-left: none;
+    }
+
+    &--active{
+      background-color: $active;
+      color: #fff;
+      cursor: default;
+    }
+
+    &:active, &:focus {
+      outline: none;
+      border: none;
+    }
+
+    &:hover:not(&--active) {
+      background: $lightGrey54;
+      color: $black76;
+    }
+  }
+
+  &__preset {
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    & > div { margin: 0 1rem; }
+  }
+
+  &__input {
+    margin-right: 5px;
+    .Select-control { min-width: 6rem }
+  }
+
+  &__row {
+    display: flex;
+    &--main { margin-top: 5px }
+    &--hours-range { justify-content: center }
+    &--inline { display: inline-flex }
+    &--items-end { align-items: flex-end }
+  }
+
+
+  &__link {
+    color: white;
+    cursor: pointer;
+    right: 0;
+    margin-right: .35rem;
+    margin-top: .35rem;
+    select {
+      border: 1px solid #ddd;
+      border-radius: .35rem;
+    }
+  }
+
+  &__label { color: $black76 }
+
+  &__action {
+    float: right;
+    position: relative;
+    margin-top: 1rem;
+    line-height: 2.5rem;
+    padding: 0 1rem;
+    border: none;
+    border-radius: .35rem;
+    background: $info;
+    color: $info;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .2s;
+    &:hover {
+      background: darken($info, 10%);
+      color: darken($info, 10%);
+    }
+    &:after {
+      content: 'Generate';
+      position: absolute;
+      left: 50%;
+      color: $whiteFour;
+      transform: translate(-50%, 0);
+    }
+  }
+}

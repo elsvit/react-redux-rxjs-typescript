@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'mixins';
+
+.colored-status {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 1rem solid $pinkishGrey;
+  border-top-left-radius: $sz-6;
+  z-index: $zColoredStatus;
+
+  &.auth-status {
+    @include colored-status(-1, $pinkishGrey); // None
+    @include colored-status(1, $wheat); // Configuration
+    @include colored-status(0, $lightBlueGreyTwo); // Idle
+    @include colored-status(2, $lightBlueGreyThree); // Handshaking
+    @include colored-status(3, $perryWinkle); // Commitments
+    @include colored-status(4, $cornflowerBlue); // KeySharing
+    @include colored-status(5, $bluish); // Omega
+    @include colored-status(6, $nightBlue); // DwpIdProofState
+    @include colored-status(7, $lightGreyGreen); // Authenticated
+    @include colored-status(8, $paleRed); // Failed
+    @include colored-status(9, $rosePink); // UnAvailable
+    @include colored-status(10, $lightBlueGrey); // InitState
+    @include colored-status(11, $twilightBlue); // AssetDiscovery
+    @include colored-status(12, $lightNavy); // ProxyDiscovery
+  }
+
+  &.operation-status {
+    @include colored-status(0, $lightGreyGreen); // None
+    @include colored-status(1, $wheat); // Low
+    @include colored-status(2, $lightSalmon); // High
+    @include colored-status(3, $rosePink); // Error
+  }
+
+  &.exception-status {
+    @include colored-status(0, $lightSalmon); // General
+    @include colored-status(1, $rosePink); // Communications
+  }
+
+  &.asset-status {
+    @include colored-status(0,  $pinkishGrey); // None
+    @include colored-status(1, $palePurple); // Need Sync
+    @include colored-status(2, $lightGreyGreen); // Deployed
+    @include colored-status(3, $wheat); // Sent
+    @include colored-status(7, $paleRed); // Failed
+  }
+}

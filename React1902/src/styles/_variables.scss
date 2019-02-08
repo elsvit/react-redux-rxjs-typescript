@@ -1,0 +1,296 @@
+$basePath: "";
+$imagePath: "#{$basePath}/resources/img";
+
+//----------------------------------------------------------------------------------------------------------------------
+// Colors
+//----------------------------------------------------------------------------------------------------------------------
+
+$whiteFour: #ffffff;
+$whiteThree: #fbfbfb;
+$whiteFive: #fdfdfd;
+$whiteFour87: rgba(255, 255, 255, 0.87);
+$whiteFour76: rgba(255, 255, 255, 0.76);
+$white: #e6e6e6; // $white
+$white38: rgba(230, 230, 230, 0.38);
+$whiteTwo: #ececec;
+$whiteTwo87: rgba(236, 236, 236, 0.87);
+$whiteSeven: #efeeee;
+$whiteSix: #eeeeee;
+$whiteSix38: rgba(238, 238, 238, 0.38);
+
+$warmGrey: #979797;
+$lightGrey54: rgba(252, 252, 249, 0.54);
+$lightGrey87: rgba(252, 252, 249, 0.87);
+$lightGrey12: rgba(252, 252, 249, 0.12);
+$darkGrey12: rgba(44, 45, 45, 0.12);
+$darkGrey36: rgba(44, 45, 45, 0.36);
+$darkGrey54: rgba(44, 45, 45, 0.54);
+$darkGrey76: rgba(44, 45, 45, 0.76);
+$darkGrey87: rgba(44, 45, 45, 0.87);
+$darkGrey96: rgba(44, 45, 45, 0.96);
+$darkGrey: rgb(44, 45, 45);
+$slateGrey38: rgba(94, 98, 105, 0.38);
+$slateGrey54: rgba(94, 98, 105, 0.54);
+$slateGrey87: rgba(94, 98, 105, 0.87);
+$slateGrey: #5e6269;
+$brownishGrey: #616161;
+$charcoalGrey: #323b45;
+
+$gunmetal54: rgba(72, 80, 94, 0.54);
+$steel12: rgba(116, 132, 154, 0.12);
+$steel38: rgba(116, 132, 154, 0.38);
+$steel76: rgba(116, 132, 154, 0.76);
+$steel: #74849a;
+$blueGrey: #98acc0;
+
+$black8: rgba(0, 0, 0, 0.08);
+$black12: rgba(0, 0, 0, 0.12);
+$black14: rgba(0, 0, 0, 0.14);
+$black20: rgba(0, 0, 0, 0.2);
+$black36: rgba(0, 0, 0, 0.36);
+$black42: rgba(0, 0, 0, 0.42);
+$black54: rgba(0, 0, 0, 0.54);
+$black76: rgba(0, 0, 0, 0.76);
+$black87: rgba(0, 0, 0, 0.87);
+$black: #000000;
+
+$cyan: #00ffff;
+$darkSkyBlue: #4a90e2;
+$lightBlue: #90caf9;
+$lightBlueGrey: #b2dfdb;
+$lightBlueGreyTwo: #d4e3f3;
+$lightBlueGreyThree: #a9c7e8;
+$perryWinkle: #7fabdc;
+$cornflowerBlue: #548fd1;
+$bluish: #2a73c5;
+$lightNavy: #12539e;
+$twilightBlue: #0c3869;
+$nightBlue: #061c35;
+
+$wheat: #ffe082;
+$brightYellow: #e8f100;
+
+$lightSalmon: #ffab91;
+$tangerine: rgb(255, 133, 16);
+$tangerineLight: rgba(255, 133, 16, 0.76);
+$tangerineLightest: rgba(255, 133, 16, 0.36);
+$dirtyOrange: #da6f08;
+$auburn: #923b00;
+$auburn8: rgba(146, 59, 0, 0.08);
+
+$paleRed: #e2574c;
+$rosePink: #f48fb1;
+
+$lightGreyGreen: #c5e1a5;
+$palePurple: #b39ddb;
+$pinkishGrey: #d7ccc8;
+$silver: #cfd8dc;
+
+$primary: $tangerine;
+$primaryLight: $tangerineLightest;
+$danger: $paleRed;
+$active: $steel;
+$inactive: $darkGrey;
+$info: $blueGrey;
+$infoInvert: $whiteFour;
+
+$btnInfoColor: $info;
+$btnDisabledColor: $darkGrey36;
+$historyConnectorColor: #74849a;
+$modalBackgroundColor: $black54;
+$selectedAssetBgColor: $steel38;
+$historyConnectorBorder: 2px solid $historyConnectorColor;
+
+$orangeGradient: linear-gradient(45deg, #ffbb25, $tangerine);
+//----------------------------------------------------------------------------------------------------------------------
+// Sizes. 1rem = 16px
+//----------------------------------------------------------------------------------------------------------------------
+
+$sz-3: 0.1875rem;
+$sz-4: 0.25rem;
+$sz-5: 0.3125rem;
+$sz-6: 0.375rem;
+$sz-7: 0.4375rem;
+$sz-8: 0.5rem;
+$sz-10: 0.625rem;
+$sz-12: 0.75rem;
+$sz-13: 0.8125rem;
+$sz-14: 0.875rem;
+$sz-15: 0.9375rem;
+$sz-16: 1rem;
+$sz-17: 1.0625rem;
+$sz-18: 1.125rem;
+$sz-20: 1.25rem;
+$sz-22: 1.37rem;
+$sz-24: 1.5rem;
+$sz-26: 1.62rem;
+$sz-28: 1.75rem;
+$sz-30: 1.875rem;
+$sz-32: 2rem;
+$sz-34: 2.12rem;
+$sz-35: 2.1875rem;
+$sz-36: 2.24rem;
+$sz-38: 2.37rem;
+$sz-40: 2.5rem;
+$sz-41: 2.56rem;
+$sz-42: 2.625rem;
+$sz-44: 2.75rem;
+$sz-45: 2.81rem;
+$sz-46: 2.9rem;
+$sz-48: 3rem;
+$sz-50: 3.125rem;
+$sz-52: 3.25rem;
+$sz-54: 3.37rem;
+$sz-56: 3.5rem;
+$sz-60: 3.75rem;
+$sz-61: 3.8125rem;
+$sz-62: 3.875rem;
+$sz-64: 4rem;
+$sz-72: 4.5rem;
+$sz-80: 5rem;
+$sz-88: 5.5rem;
+$sz-96: 6rem;
+$sz-100: 6.25rem;
+$sz-112: 7rem;
+$sz-114: 7.1rem;
+$sz-115: 7.2rem;
+$sz-116: 7.25rem;
+$sz-123: 7.6875rem;
+$sz-125: 7.8125rem;
+$sz-144: 9rem;
+$sz-146: 9.1rem;
+$sz-150: 9.37rem;
+$sz-176: 11rem;
+$sz-192: 12rem;
+$sz-200: 12.5rem;
+$sz-250: 15.6rem;
+$sz-368: 23rem;
+$sz-400: 25rem;
+$sz-472: 29.5rem;
+$sz-500: 31.25rem;
+$sz-700: 43.75rem;
+$sz-800: 50rem;
+
+//----------------------------------------------------------------------------------------------------------------------
+// Dimensions
+//----------------------------------------------------------------------------------------------------------------------
+
+$lineHeightSmall: 1.125;
+$lineHeightNormal: 1.31;
+$lineHeightMedium: 1.5;
+$lineHeightLarge: 2;
+$ioControlRadius: $sz-26;
+$searchControlHeight: $sz-40;
+$controlHeight: $sz-45;
+$controlLabelWidth: 6rem;
+
+$logoSmallWidth: $sz-54;
+$logoWidth: $sz-250;
+$logoWidthDesktop: $sz-146;
+$logoWidthMobile: $sz-150;
+$logoHeightDesktop: $sz-41;
+$logoSmallHeightDesktop: $sz-50;
+
+$menuItemHeightLarge: $sz-96;
+$collapsedMenuWidth: 4.375rem;
+$menuWidth: 13.75rem;
+$navBarHeight: $sz-250;
+$navBarHeightMobile: $sz-200;
+
+$historyRowMaxWidth: $sz-700;
+
+$border: $darkGrey12;
+
+$borderThinWidth: 1px;
+$borderSmallWidth: 2px;
+$borderMediumWidth: $sz-3;
+$borderThickWidth: $sz-4;
+$borderLargeWidth: $sz-6;
+
+$borderThin: $borderThinWidth solid $border;
+$borderSmall: $borderSmallWidth solid $border;
+$borderMedium: $borderMediumWidth solid $border;
+$borderThick: $borderThickWidth solid $border;
+$borderLarge: $borderLargeWidth solid $border;
+
+$pagePadding: $sz-32;
+$defaultDotSize: $sz-12;
+$tabsLinkPadding: $sz-6 $sz-16;
+
+$qrCodeImgSize: 220px;
+$usersListQrCodeImgSize: $sz-100;
+
+//----------------------------------------------------------------------------------------------------------------------
+// Z-Indexes
+//----------------------------------------------------------------------------------------------------------------------
+
+$zNavBar: 100;
+$zModal: 1000;
+$zModalActions: $zModal + 1;
+$zBase: 1;
+$zArrows: $zBase + 1;
+$zInput: $zArrows + 1;
+$zGrid: $zBase + 1;
+$zColoredStatus: $zGrid + 1;
+$zMenus: 100;
+$zHeader: $zMenus - 2;
+$zStickyContainer: $zMenus - 1;
+$zMenuMobile: $zMenus + 1;
+$zToasts: $zMenuMobile + 1;
+
+//----------------------------------------------------------------------------------------------------------------------
+// Animations
+//----------------------------------------------------------------------------------------------------------------------
+$duration: 0.5s;
+$durationSlow: 0.8s;
+$durationFast: 0.2s;
+
+//----------------------------------------------------------------------------------------------------------------------
+// Fonts
+//----------------------------------------------------------------------------------------------------------------------
+
+// TODO: awful font rendering on windows
+$fontFamilyHelvetica: "Helvetica Neue", "Helvetica", "HelveticaNeue",
+  -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Arial", sans-serif;
+$fontFamilyHelveticaMedium: "Helvetica Neue Medium", "Helvetica Medium",
+  "Helvetica", "HelveticaNeue-Medium", -apple-system, "BlinkMacSystemFont",
+  "Segoe UI", "Roboto", "Arial", sans-serif;
+$fontFamilyHelveticaLight: "Helvetica Neue Light", "Helvetica Light",
+  "Helvetica", "HelveticaNeue-Light", -apple-system, "BlinkMacSystemFont",
+  "Segoe UI", "Roboto", "Arial", sans-serif;
+$fontFamilyHelveticaBold: "Helvetica Neue Bold", "Helvetica Bold",
+  "Helvetica", "HelveticaNeue-Bold", -apple-system, "BlinkMacSystemFont",
+  "Segoe UI", "Roboto", "Arial", sans-serif;
+
+$rowBoxShadow: 0 1px 3px 0 $black20, 0 2px 1px -1px $black12,
+  0 1px 1px 0 $black14;
+
+//----------------------------------------------------------------------------------------------------------------------
+// Bulma
+//----------------------------------------------------------------------------------------------------------------------
+$small-phone: 321px;
+$phone: 481px;
+$tablet: 769px;
+$desktop: 980px;
+$widescreen: 1344px;
+$mobile-width: $tablet -1px;
+$link: $auburn;
+$link-hover: $darkGrey87;
+$text: $darkGrey76;
+$text-light: $darkGrey54;
+$text-strong: $darkGrey87;
+$app-background: $whiteSeven;
+$body-background-color: $app-background;
+$page-header-color: $darkGrey87;
+$weight-light: 300;
+$weight-normal: 400;
+$weight-bold: 500;
+$family-primary: $fontFamilyHelvetica;
+
+//----------------------------------------------------------------------------------------------------------------------
+// Tabs
+//----------------------------------------------------------------------------------------------------------------------
+$tabs-border-bottom-color: $border;
+$tabs-border-bottom-width: $borderThinWidth;
+$tabs-link-hover-border-bottom-color: transparent;
+$tabs-link-hover-color: $active;
